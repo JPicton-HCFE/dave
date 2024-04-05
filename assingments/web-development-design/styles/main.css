@@ -2,7 +2,7 @@
 /* --------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-/*  */
+/*   */
 /* --------------------------------------------------------- */
 * {
   /* Vairables */
@@ -21,7 +21,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 
-  /* Setting font */
+  /* Setting Base Font */
   font-family: "Quicksand", sans-serif;
 }
 
