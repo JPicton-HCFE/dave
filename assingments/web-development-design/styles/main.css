@@ -35,6 +35,7 @@ h1 {
 header {
   display: flex;
   max-height: 10em;
+  margin-bottom: 1em;
 }
 
 #heading-banner {
@@ -54,3 +55,21 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+/* --------------------------------------------------------- */
+/*  Spacing for left panel and main content */
+main {
+  display: flex;
+}
+
+#left-panel {
+  width: 12vw;
+  max-width: 12vw;
+}
+
+#main-content {
+  width: 88vw;
+}
+
+/* --------------------------------------------------------- */
+/*  Styling for the elements within the left side panel */
