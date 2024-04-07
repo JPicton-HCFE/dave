@@ -224,5 +224,5 @@ table {
 a,
 a:hover{
  text-decoration: none;
- color: none; 
+ color: inherit; 
 }

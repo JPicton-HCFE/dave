@@ -8,6 +8,10 @@
   /* Vairables */
   --primary-color: #F7FFF7;
   --secondary-color: #292F36;
+  --important-color: #FFE66D;
+  --warning-color: #FF6B6B;
+  --content-color-one: #4ECDC4;
+  --content-color-two: #62C96C;
 
   /* Font Family */
   font-family: "Quicksand", sans-serif;
@@ -31,24 +35,11 @@ header {
   font-size: 20px;
 }
 
-footer {
-  font-size: 16px;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  height: 10rem;
-}
-
-/* Setting Heading 1 Styling */
-h1 {
-  font-size: 64px;
-}
-
 /* --------------------------------------------------------- */
 /* Setting Header and Header Element Styles */
 header {
   display: flex;
-  max-height: 10em;
-  margin-bottom: 1em;
+  max-height: 12em;
 }
 
 #heading-banner {
@@ -69,23 +60,47 @@ header {
   justify-content: center;
 }
 
+#title-img {
+  width: 80vw;
+}
+
 /* --------------------------------------------------------- */
 /*  Navigation Bar Styling */
 #main-nav {
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
-  border: 1px black solid;
-  margin: 1em;
+  font-size: 3em;
+  font-weight: 900;
+
+  background: rgb(9, 9, 121);
+  background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 50%, rgba(9, 9, 121, 1) 100%);
+
+  color: var(--content-color-one);
+
+  border-top: 5px groove seagreen;
+  border-bottom: 5px groove seagreen;
 }
 
 #main-nav>#nav-ul {
   display: flex;
+  width: 85%;
+  justify-content: space-around;
 }
 
 .nav-item {
   display: flex;
-  padding: 0.2em;
+  padding: 0.5em 0.3em;
+}
+
+.nav-item:hover {
+  transition: ease-in-out 800ms;
+  color: var(--content-color-two);
+}
+
+/* Recieved help from here https://www.squash.io/how-to-apply-outline-effect-to-text-in-css/ */
+.outline-text {
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
 /* --------------------------------------------------------- */
@@ -96,6 +111,8 @@ header {
 /*  Spacing for left panel and main content */
 main {
   display: flex;
+  margin: 3rem 0;
+  height: 70vw;
 }
 
 #left-panel {
@@ -115,13 +132,44 @@ main {
 
 /* --------------------------------------------------------- */
 /*  Styling for the Main Paragraph homepage. */
+#welcome-p {
+  font-size: 1.7rem;
+  text-align: center;
+}
 
 /* --------------------------------------------------------- */
 /*  Styling for the Footer. */
 footer {
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  height: 5rem;
+  border-top: 2px var() solid;
+
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
+/* Gives some spacing around the footer links */
 #flinks {
-  margin: 2em 0;
+  margin: 1em 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/* Styling hyperlinks when they are hovered over. */
+footer>div>a:hover {
+  color: purple;
+}
+
+/* --------------------------------------------------------- */
+/* Styling Spans, similar to how boostrap does this */
+/* Warning Content Font */
+.w-font {
+  color: var(--warning-color);
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
 }
