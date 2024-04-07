@@ -70,6 +70,29 @@ header {
 }
 
 /* --------------------------------------------------------- */
+/*  Navigation Bar Styling */
+#main-nav {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  border: 1px black solid;
+  margin: 1em;
+}
+
+#main-nav>#nav-ul {
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  padding: 0.2em;
+}
+
+/* --------------------------------------------------------- */
+/*  Navigation Bar Mouse Hover Styling*/
+
+
+/* --------------------------------------------------------- */
 /*  Spacing for left panel and main content */
 main {
   display: flex;
@@ -92,3 +115,13 @@ main {
 
 /* --------------------------------------------------------- */
 /*  Styling for the Main Paragraph homepage. */
+
+/* --------------------------------------------------------- */
+/*  Styling for the Footer. */
+footer {
+  display: flex;
+}
+
+#flinks {
+  margin: 2em 0;
+}
