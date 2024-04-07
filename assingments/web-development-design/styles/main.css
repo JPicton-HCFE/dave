@@ -76,9 +76,9 @@ header {
   background: rgb(9, 9, 121);
   background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 50%, rgba(9, 9, 121, 1) 100%);
 
-  color: var(--content-color-one);
+  color: white;
 
-  border-top: 5px groove seagreen;
+  border-top: 2px solid black;
   border-bottom: 5px groove seagreen;
 }
 
@@ -94,8 +94,8 @@ header {
 }
 
 .nav-item:hover {
-  transition: ease-in-out 800ms;
-  color: var(--content-color-two);
+  transition: ease-in-out 500ms;
+  color: darkgrey;
 }
 
 /* Recieved help from here https://www.squash.io/how-to-apply-outline-effect-to-text-in-css/ */
