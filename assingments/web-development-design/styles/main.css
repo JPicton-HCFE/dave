@@ -25,6 +25,19 @@ footer {
   font-family: "Quicksand", sans-serif;
 }
 
+/* Setting Font Sizes */
+body,
+header {
+  font-size: 20px;
+}
+
+footer {
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  height: 10rem;
+}
+
 /* Setting Heading 1 Styling */
 h1 {
   font-size: 64px;
@@ -74,5 +87,8 @@ main {
 /* --------------------------------------------------------- */
 /*  Styling for the elements within the left side panel */
 #left-help {
-  
+  padding: 0;
 }
+
+/* --------------------------------------------------------- */
+/*  Styling for the Main Paragraph homepage. */
