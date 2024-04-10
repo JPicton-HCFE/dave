@@ -122,6 +122,10 @@ main {
 
 #main-content {
   width: 76vw;
+  background-color: rgba(78, 205, 196, 0.3);
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px groove black;
 }
 
 /* --------------------------------------------------------- */
@@ -133,8 +137,9 @@ main {
 /* --------------------------------------------------------- */
 /*  Styling for the Main Paragraph homepage. */
 #welcome-p {
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
+  font-weight: 700;
 }
 
 /* --------------------------------------------------------- */
