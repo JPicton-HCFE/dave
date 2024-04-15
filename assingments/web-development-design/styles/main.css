@@ -46,7 +46,8 @@ h2 {
 /* Setting Header and Header Element Styles */
 header {
   display: flex;
-  max-height: 12em;
+  max-height: 15em;
+  justify-content: center;
 }
 
 #heading-banner {
@@ -122,8 +123,9 @@ main {
 }
 
 #left-panel {
-  width: 12vw;
-  max-width: 12vw;
+  width: 11vw;
+  max-width: 11vw;
+  margin: 0 2rem 0 0.3rem;
 
   display: flex;
 }
@@ -142,11 +144,24 @@ main {
 /* --------------------------------------------------------- */
 /*  Styling for the elements within the left side panel */
 #left-help {
-  padding: 0;
+  background-color: var(--important-color);
+
+  box-sizing: border-box;
+  border: #967d00 solid 1px;
+  overflow-wrap: normal;
+  max-height: 25vh;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 #left-help-title {
-
+  color: #967d00;
+  text-decoration: underline;
+  font-size: 36px;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 /* --------------------------------------------------------- */
