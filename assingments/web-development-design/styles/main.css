@@ -100,10 +100,6 @@ header {
   padding: 0.5em 0.3em;
 }
 
-.nav-item:hover {
-  transition: ease-in-out 500ms;
-  color: darkgrey;
-}
 
 /* Recieved help from here https://www.squash.io/how-to-apply-outline-effect-to-text-in-css/ */
 .outline-text {
@@ -112,7 +108,10 @@ header {
 
 /* --------------------------------------------------------- */
 /*  Navigation Bar Mouse Hover Styling*/
-
+.nav-item:hover {
+  transition: ease-in-out 500ms;
+  color: darkgrey;
+}
 
 /* --------------------------------------------------------- */
 /*  Spacing for left panel and main content */
@@ -125,6 +124,8 @@ main {
 #left-panel {
   width: 12vw;
   max-width: 12vw;
+
+  display: flex;
 }
 
 #main-content {
@@ -142,6 +143,10 @@ main {
 /*  Styling for the elements within the left side panel */
 #left-help {
   padding: 0;
+}
+
+#left-help-title {
+
 }
 
 /* --------------------------------------------------------- */
