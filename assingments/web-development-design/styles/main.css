@@ -1,17 +1,17 @@
 /* Imports */
 /* --------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 /*   */
 /* --------------------------------------------------------- */
 * {
   /* Vairables */
-  --primary-color: #F7FFF7;
-  --secondary-color: #292F36;
-  --important-color: #FFE66D;
-  --warning-color: #FF6B6B;
-  --content-color-one: #4ECDC4;
-  --content-color-two: #62C96C;
+  --primary-color: #f7fff7;
+  --secondary-color: #292f36;
+  --important-color: #ffe66d;
+  --warning-color: #ff6b6b;
+  --content-color-one: #4ecdc4;
+  --content-color-two: #62c96c;
 
   /* Font Family */
   font-family: "Quicksand", sans-serif;
@@ -47,12 +47,12 @@ h2 {
 header {
   display: flex;
   max-height: 15em;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #heading-banner {
   display: flex;
-  width: 100vw;
 }
 
 #main-logo {
@@ -69,7 +69,8 @@ header {
 }
 
 #title-img {
-  width: 80vw;
+  width: 70vw;
+  max-height: inherit;
 }
 
 /* --------------------------------------------------------- */
@@ -82,7 +83,12 @@ header {
   font-weight: 900;
 
   background: rgb(9, 9, 121);
-  background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 50%, rgba(9, 9, 121, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 50%,
+    rgba(9, 9, 121, 1) 100%
+  );
 
   color: white;
 
@@ -90,7 +96,7 @@ header {
   border-bottom: 5px groove seagreen;
 }
 
-#main-nav>#nav-ul {
+#main-nav > #nav-ul {
   display: flex;
   width: 85%;
   justify-content: space-around;
@@ -101,10 +107,10 @@ header {
   padding: 0.5em 0.3em;
 }
 
-
 /* Recieved help from here https://www.squash.io/how-to-apply-outline-effect-to-text-in-css/ */
 .outline-text {
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
 }
 
 /* --------------------------------------------------------- */
@@ -128,6 +134,7 @@ main {
   margin: 0 2rem 0 0.3rem;
 
   display: flex;
+  flex-direction: column;
 }
 
 #main-content {
@@ -145,15 +152,15 @@ main {
 /*  Styling for the elements within the left side panel */
 #left-help {
   background-color: var(--important-color);
-
   box-sizing: border-box;
   border: #967d00 solid 1px;
   overflow-wrap: normal;
-  max-height: 25vh;
+  max-height: 40vh;
 
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 0 0 1rem 0;
 }
 
 #left-help-title {
@@ -162,6 +169,15 @@ main {
   font-size: 36px;
   padding: 1rem 0;
   text-align: center;
+}
+
+#left-help-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#left-content {
+  border: black solid 1px;
 }
 
 /* --------------------------------------------------------- */
@@ -200,9 +216,14 @@ footer {
   justify-content: space-evenly;
 }
 
+#fgithub {
+  display: flex;
+  align-items: center;
+}
+
 /* Styling hyperlinks when they are hovered over. */
-footer>div>a:hover {
-  color: purple;
+footer > div > a:hover {
+  color: var(--content-color-one);
 }
 
 /* --------------------------------------------------------- */
