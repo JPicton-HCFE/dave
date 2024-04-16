@@ -221,6 +221,14 @@ footer {
   align-items: center;
 }
 
+.multicolor-svg {
+  fill: #1e90ff;
+}
+
+.multicolor-svg:hover {
+  fill: #d81313;
+}
+
 /* Styling hyperlinks when they are hovered over. */
 footer > div > a:hover {
   color: var(--content-color-one);
