@@ -12,6 +12,7 @@
   --warning-color: #ff6b6b;
   --content-color-one: #4ecdc4;
   --content-color-two: #62c96c;
+  --purple: #b894ec;
 
   /* Font Family */
   font-family: "Quicksand", sans-serif;
@@ -83,12 +84,10 @@ header {
   font-weight: 900;
 
   background: rgb(9, 9, 121);
-  background: linear-gradient(
-    90deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(0, 212, 255, 1) 50%,
-    rgba(9, 9, 121, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(9, 9, 121, 1) 0%,
+      rgba(0, 212, 255, 1) 50%,
+      rgba(9, 9, 121, 1) 100%);
 
   color: white;
 
@@ -96,7 +95,7 @@ header {
   border-bottom: 5px groove seagreen;
 }
 
-#main-nav > #nav-ul {
+#main-nav>#nav-ul {
   display: flex;
   width: 85%;
   justify-content: space-around;
@@ -216,21 +215,32 @@ footer {
   justify-content: space-evenly;
 }
 
-#fgithub {
+#fgithub,
+#fhcfe {
   display: flex;
   align-items: center;
 }
 
-.multicolor-svg {
-  fill: #1e90ff;
+.falink {
+  display: flex;
+  align-items: center;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+  text-decoration: underline;
 }
 
-.multicolor-svg:hover {
-  fill: #d81313;
+.website-icon {
+  stroke: var(--primary-color);
+}
+
+.falink:hover {
+  color: var(--purple);
+  fill: var(--purple);
+  stroke: var(--purple);
 }
 
 /* Styling hyperlinks when they are hovered over. */
-footer > div > a:hover {
+footer>div>a:hover {
   color: var(--content-color-one);
 }
 
@@ -242,4 +252,8 @@ footer > div > a:hover {
   font-weight: 700;
   font-style: italic;
   text-decoration: underline;
+}
+
+.pad-right-5 {
+  padding-right: 5px;
 }
