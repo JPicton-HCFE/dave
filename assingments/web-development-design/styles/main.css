@@ -61,6 +61,11 @@ header {
   max-width: 100%;
 }
 
+#main-logo:hover {
+  outline: 1px solid black;
+  box-sizing: border-box;
+}
+
 #main-heading {
   max-width: 100%;
   display: flex;
@@ -236,6 +241,10 @@ footer {
 .falink:hover {
   color: var(--purple);
   fill: var(--purple);
+  stroke: var(--purple);
+}
+
+.falink:hover>.website-icon {
   stroke: var(--purple);
 }
 
