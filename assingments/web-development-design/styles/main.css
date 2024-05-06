@@ -43,6 +43,13 @@ h2 {
   padding: 1rem;
 }
 
+h3 {
+  font-size: 48px;
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
 /* --------------------------------------------------------- */
 /* Setting Header and Header Element Styles */
 header {
