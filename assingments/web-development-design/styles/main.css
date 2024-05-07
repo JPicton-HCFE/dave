@@ -197,12 +197,32 @@ main {
   font-size: 2rem;
   text-align: center;
   font-weight: 700;
+  padding-bottom: 1rem;
 }
 
 /* --------------------------------------------------------- */
 /*  Styling for the First Paragraphs on the rest of the website. */
 .first-p {
   text-align: center;
+}
+
+/* --------------------------------------------------------- */
+/*  Styling for the Contact Form. */
+#cform {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: var(--content-color-two);
+  box-sizing: border-box;
+  outline: 1px black solid;
+  border-radius: 15px;
+}
+
+.cform-p {
+  text-align: center;
+}
+
+#cform>form{
+  padding: 0.5rem 0;
 }
 
 /* --------------------------------------------------------- */
@@ -272,4 +292,9 @@ footer>div>a:hover {
 
 .pad-right-5 {
   padding-right: 5px;
+}
+
+.required {
+  color: var(--warning-color);
+  font-style: italic;
 }
