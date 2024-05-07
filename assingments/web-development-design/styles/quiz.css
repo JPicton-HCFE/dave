@@ -1,0 +1,92 @@
+/* Imports */
+/* --------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/*   */
+/* --------------------------------------------------------- */
+* {
+  /* Vairables */
+  --primary-color: #f7fff7;
+  --secondary-color: #292f36;
+  --important-color: #ffe66d;
+  --warning-color: #ff6b6b;
+  --content-color-one: #4ecdc4;
+  --content-color-two: #62c96c;
+  --purple: #b894ec;
+
+  /* Font Family */
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Basic Formatting Applies to Body, Header, and Footer Elements */
+body,
+header,
+footer {
+  /* Setting Base Colours */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  /* Setting Base Font */
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Overall Questions Styling */
+#questions {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------------------------------------- */
+/*  Styling for the Footer. */
+footer {
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  height: 5rem;
+  border-top: 2px var() solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Gives some spacing around the footer links */
+#flinks {
+  margin: 1em 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#fgithub,
+#fhcfe {
+  display: flex;
+  align-items: center;
+}
+
+.falink {
+  display: flex;
+  align-items: center;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+  text-decoration: underline;
+}
+
+.website-icon {
+  stroke: var(--primary-color);
+}
+
+.falink:hover {
+  color: var(--purple);
+  fill: var(--purple);
+  stroke: var(--purple);
+}
+
+.falink:hover>.website-icon {
+  stroke: var(--purple);
+}
+
+/* Styling hyperlinks when they are hovered over. */
+footer>div>a:hover {
+  color: var(--content-color-one);
+}

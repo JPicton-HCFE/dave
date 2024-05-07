@@ -1,39 +1,31 @@
 <html>
 
 <head>
-  <title>Software Design and Development</title>
-  <link rel="stylesheet" href="main.css">
+  <title>WebDevils - Mathematics Quiz</title>
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/quiz.css"/>
 </head>
 
 <body>
   <header>
-    <h1>Design And Develop - Mathematics Quiz</h1>
+    <h1>WebDevils - Mathematics Quiz</h1>
   </header>
   <main>
     <section>
       <p>
-        Welcome to the Mathematics quiz, there are a number of questions below
-        that need to be answered. Please make sure to go through the questions and
-        answer them as best to your ability as you can. Each question has a
+        Welcome to the Mathematics quiz, there are a number of questions below that need to be answered. Please make
+        sure to go through the questions and answer them as best to your ability as you can. Each question has a
         different amount of points that can be seen so try your best.
       </p>
       <h2>Important!</h2>
       <p>
         Make sure to answer all the questions before clicking the submit button, but remember before you do click the
-        submit
-        buttons that you cannot change your answer later.
+        submit buttons that you cannot change your answer later.
       </p>
-      <form id="">
-        <label for="firstName">Please enter your First Name:</label>
-        <input id="firstName" type="text" name="firstName">
-        <label for="lastName">Please enter your Last Name</label>
-        <input id="lastName" type="text" name="lastName">
-        <br />
-      </form>
     </section>
-    <section>
+    <section id="questions">
       <!-- Question One -->
-      <div id="questionOne">
+      <div id="questionOne" class="question">
         <form id="questionOneFrm">
           <label for="questionOneIn">Q1. What is the name of the four-sided shape that has equal-length
             sides but unequal angles?</label>
@@ -45,7 +37,7 @@
         <p id="resultOne"></p>
       </div>
       <!-- Question Two -->
-      <form id="questionTwoFrm">
+      <form id="questionTwoFrm" class="question">
         <label for="questionTwoIn">Q2. Which of these solid objects has four sides? A - Triangular Prism,
           B - Tetrahedron, C - Square-based Pyramid, D - Cuboid.</label>
         <br />
@@ -61,7 +53,7 @@
       <p id="resultTwo"></p>
       <br />
       <!-- Question Three -->
-      <form id="questionThreeFrm">
+      <form id="questionThreeFrm" class="question">
         <label for="questionThree">Q3. Which of these names refers to the same shapes? (Please select Two
           options)</label>
         <br />
@@ -87,16 +79,16 @@
       <p id="resultThree"></p>
       <br />
       <!-- Question Four -->
-      <form id="questionFourFrm">
+      <form id="questionFourFrm" class="question">
         <label for="questionFourIn">Q4. Which of these pictures below shows a cuboid? A, B, or C?</label>
         <br />
         <p>
           <span>A</span>
-          <img src="../images/A.png" alt="Image A" style="max-width: 150px" />
+          <img src="../media/images/A.png" alt="Image A" style="max-width: 150px" />
           <span>B</span>
-          <img src="../images/B.png" alt="Image B" style="max-width: 150px" />
+          <img src="../media/images/B.png" alt="Image B" style="max-width: 150px" />
           <span>C</span>
-          <img src="../images/C.png" alt="Image C" style="max-width: 150px" />
+          <img src="../media/images/C.png" alt="Image C" style="max-width: 150px" />
         </p>
         <fieldset">
           <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeA" />
@@ -112,7 +104,7 @@
       <p id="resultFour"></p>
       <br />
       <!-- Question Five -->
-      <form id="questionFiveFrm">
+      <form id="questionFiveFrm" class="question">
         <label for="questionFiveIn">Q5. An ______ triangle has two sides of the same length. Equilateral,
           Isosceles or right angled?</label>
         <br />
@@ -127,7 +119,7 @@
       <p id="resultFive"></p>
       <br />
       <!-- Question Six -->
-      <form id="questionSixFrm">
+      <form id="questionSixFrm" class="question">
         <label for="questionSixIn">Q6. How many edges does a square-based pyramid have? (Inset a number between 1 and
           12)</label>
         <br />
@@ -138,7 +130,7 @@
       <p id="resultSix"></p>
       <br />
       <!-- Question Seven -->
-      <form id="questionSevenFrm">
+      <form id="questionSevenFrm" class="question">
         <p>Q7. A rhombus is a special-case example of a square.</p>
         <label for="questionSevenIn">Checked = True, Unchecked = False?</label>
         <br />
@@ -149,7 +141,7 @@
       <p id="resultSeven"></p>
       <br />
       <!-- Question Eight -->
-      <form id="questionEightFrm">
+      <form id="questionEightFrm" class="question">
         <label for="questionEightIn">Q8. Which of these angles is a full circle?</label>
         <br />
         <select id="questionEightIn">
@@ -164,7 +156,7 @@
       <p id="resultEight"></p>
       <br />
       <!-- Question Nine -->
-      <form id="questionNineFrm">
+      <form id="questionNineFrm" class="question">
         <label for="questionNineIn">Q9. What is the value of 1005 - 44?</label>
         <br />
         <textarea id="questionNineIn" cols="20" rows="1"></textarea>
@@ -174,7 +166,7 @@
       <p id="resultNine"></p>
       <br />
       <!-- Question Ten -->
-      <form id="questionTenFrm">
+      <form id="questionTenFrm" class="question">
         <label for="questionTenIn">Q10. What is 35% of 480?</label>
         <br />
         <input id="questionTenIn" type="number" min="140" max="190">
@@ -185,11 +177,71 @@
       <br />
     </section>
     <!-- Input Button For Results -->
-    <button type="button" id="submitAnswers" form="mathQuiz">Submit</button>
+    <p>
+      Click the button below to submit your answers and go to the next page.
+    </p>
+    <a href="quiz-end.html">
+      <button type="button" id="submitAnswers" form="mathQuiz">Submit Answers</button>
+    </a>
   </main>
   <footer>
-    <span class="bold">Mathemtaics Quiz -</span> <span class="italics">For Key Stage 2 Pupils</span>.
-    <span class="bold">Coded By -</span> <a href="https://github.com/JPicton-HCFE" class="italics">Jordan Picton</a>.
+    <section id="flinks">
+      <div id="fgithub">
+        <a class="falink" href="https://github.com/JPicton-HCFE">
+          <!-- <img class="pad-right-5" src="media/icons/github.svg" alt="GitHub Logo"> -->
+          <svg class="pad-right-5" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          Jordan Picton
+        </a>
+      </div>
+      <div id="fhcfe">
+        <a class="falink" href="https://www.hartlepoolfe.ac.uk">
+          <!-- SVG code for website Icon -->
+          <svg class="pad-right-5 website-icon" width="25" height="25" viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg" stroke-width="3" fill="none">
+            <path d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6" />
+            <path d="M37.86,51.1A47,47,0,0,1,32,56.7" />
+            <path d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85" />
+            <path d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24" />
+            <line x1="10.37" y1="19.9" x2="53.75" y2="19.9" />
+            <line x1="32" y1="6.99" x2="32" y2="56.7" />
+            <line x1="11.05" y1="45.48" x2="37.04" y2="45.48" />
+            <line x1="7.14" y1="32.46" x2="56.86" y2="31.85" />
+            <path
+              d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z" />
+          </svg>
+          Hartlepool College of Further Education
+        </a>
+      </div>
+      <div>
+        <a class="falink" href="https://github.com/JPicton-HCFE/dave/commits/main/">
+          <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="pad-right-5" fill-rule="evenodd" clip-rule="evenodd"
+              d="M20 20C20.5523 20 21 19.5523 21 19C21 18.4477 20.5523 18 20 18C19.4477 18 19 18.4477 19 19C19 19.5523 19.4477 20 20 20ZM17 19C17 17.6938 17.8348 16.5825 19 16.1707V16C19 14.3431 17.6569 13 16 13C14.8744 13 13.8357 12.6281 13 12.0004L13 16.1707C14.1652 16.5825 15 17.6938 15 19C15 20.6569 13.6569 22 12 22C10.3431 22 9 20.6569 9 19C9 17.6938 9.83481 16.5825 11 16.1707L11 12.0004C10.1643 12.6281 9.12561 13 8 13C6.34315 13 5 14.3431 5 16V16.1707C6.16519 16.5825 7 17.6938 7 19C7 20.6569 5.65685 22 4 22C2.34315 22 1 20.6569 1 19C1 17.6938 1.83481 16.5825 3 16.1707V16C3 13.2386 5.23858 11 8 11C9.65685 11 11 9.65685 11 8V7.82929C9.83481 7.41746 9 6.30622 9 5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5C15 6.30622 14.1652 7.41746 13 7.82929V8C13 9.65685 14.3431 11 16 11C18.7614 11 21 13.2386 21 16V16.1707C22.1652 16.5825 23 17.6938 23 19C23 20.6569 21.6569 22 20 22C18.3431 22 17 20.6569 17 19ZM12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6ZM4 18C3.44772 18 3 18.4477 3 19C3 19.5523 3.44772 20 4 20C4.55228 20 5 19.5523 5 19C5 18.4477 4.55228 18 4 18ZM13 19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19C11 18.4477 11.4477 18 12 18C12.5523 18 13 18.4477 13 19Z" />
+          </svg>
+          Website Control Flow
+        </a>
+      </div>
+      <div>
+        <a class="falink" href="pages/about.html">
+          <svg class="pad-right-5 website-icon" width="25" height="25" viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg" stroke-width="3" fill="none">
+            <path d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6" />
+            <path d="M37.86,51.1A47,47,0,0,1,32,56.7" />
+            <path d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85" />
+            <path d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24" />
+            <line x1="10.37" y1="19.9" x2="53.75" y2="19.9" />
+            <line x1="32" y1="6.99" x2="32" y2="56.7" />
+            <line x1="11.05" y1="45.48" x2="37.04" y2="45.48" />
+            <line x1="7.14" y1="32.46" x2="56.86" y2="31.85" />
+            <path
+              d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z" />
+          </svg>
+          WebDevils
+        </a>
+      </div>
   </footer>
 </body>
 <script src="../scripts/main.js" type="text/javascript"></script>
