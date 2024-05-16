@@ -13,6 +13,7 @@
   --content-color-one: #4ecdc4;
   --content-color-two: #62c96c;
   --purple: #b894ec;
+  --warning-text: #ff2c2c;
 
   /* Font Family */
   font-family: "Quicksand", sans-serif;
@@ -33,6 +34,13 @@ footer {
 /* Setting Font Sizes */
 h1 {
   font-size: 64px;
+  text-align: center;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 56px;
   text-align: center;
   font-weight: 900;
   text-decoration: underline;
@@ -75,12 +83,31 @@ main {
   background-color: rgba(78, 205, 196, 0.3);
   padding: 1.5rem;
   border-radius: 20px;
-  border: 1px groove black;
+  border: 1px groove var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+#top-paras {
+  font-size: 1.3rem;
+  padding: 0.4rem 0.2rem;
+}
+
+/* --------------------------------------------------------- */
+/*  Styling for the Important Paragraph. */
+#importantContent {
+  background-color: var(--warning-color);
+  padding: 0.6rem;
+  margin: 1.5rem;
+}
+
+.importantTitle {
+  padding-bottom: 1rem;
+  color: var(--warning-text)
+}
+
+.questions
 /* --------------------------------------------------------- */
 /*  Styling for the Footer. */
 footer {
