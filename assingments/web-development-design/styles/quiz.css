@@ -30,10 +30,49 @@ footer {
   font-family: "Quicksand", sans-serif;
 }
 
-/* Overall Questions Styling */
-#questions {
+/* Setting Font Sizes */
+h1 {
+  font-size: 64px;
+  text-align: center;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  margin: 3rem 0;
+}
+
+#left-panel {
+  width: 11vw;
+  max-width: 11vw;
+  margin: 0 2rem 0 0.3rem;
   display: flex;
   flex-direction: column;
+}
+
+#left-help-title {
+  color: #967d00;
+  text-decoration: underline;
+  font-size: 36px;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#left-content {
+  border: black solid 1px;
+}
+
+#main-content {
+  width: 76vw;
+  max-width: 76vw;
+  background-color: rgba(78, 205, 196, 0.3);
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px groove black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* --------------------------------------------------------- */
@@ -89,4 +128,9 @@ footer {
 /* Styling hyperlinks when they are hovered over. */
 footer>div>a:hover {
   color: var(--content-color-one);
+}
+
+/* Global Styles */
+.borderRadius {
+  border-radius: 15px;
 }

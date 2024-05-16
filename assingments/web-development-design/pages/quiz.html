@@ -3,186 +3,180 @@
 <head>
   <title>WebDevils - Mathematics Quiz</title>
   <link rel="stylesheet" href="../styles/reset.css" />
-  <link rel="stylesheet" href="../styles/quiz.css"/>
+  <link rel="stylesheet" href="../styles/quiz.css" />
 </head>
 
 <body>
   <header>
     <h1>WebDevils - Mathematics Quiz</h1>
   </header>
+  <!-- Start of the Main content. -->
   <main>
-    <section>
+    <!-- Left Panel Section -->
+    <section id="left-panel">
+      <div id="left-help">
+        <span id="left-help-title">Help</span>
+        <p id="left-help-p">
+          If you are in need of some help to understand the quiz please click here.
+        </p>
+      </div>
+    </section>
+    <section id="main-content" class="borderRadius">
       <p>
         Welcome to the Mathematics quiz, there are a number of questions below that need to be answered. Please make
         sure to go through the questions and answer them as best to your ability as you can. Each question has a
         different amount of points that can be seen so try your best.
       </p>
-      <h2>Important!</h2>
-      <p>
-        Make sure to answer all the questions before clicking the submit button, but remember before you do click the
-        submit buttons that you cannot change your answer later.
-      </p>
-    </section>
-    <section id="questions">
-      <!-- Question One -->
-      <div id="questionOne" class="question">
-        <form id="questionOneFrm">
-          <label for="questionOneIn">Q1. What is the name of the four-sided shape that has equal-length
-            sides but unequal angles?</label>
-          <br />
-          <input id="questionOneIn" type="text" size="20" />
-          <br />
-          <input type="Button" id="submitBtnOne" value="Submit Question One" onClick="questionOne()">
-        </form>
-        <p id="resultOne"></p>
-      </div>
-      <!-- Question Two -->
-      <form id="questionTwoFrm" class="question">
-        <label for="questionTwoIn">Q2. Which of these solid objects has four sides? A - Triangular Prism,
-          B - Tetrahedron, C - Square-based Pyramid, D - Cuboid.</label>
-        <br />
-        <select id="questionTwoIn" name="questionTwoIn">
-          <option value="triangularprism">A - Triangular Prism</option>
-          <option value="tetrahedron">B - Tetrahedron</option>
-          <option value="squarebasedpyramid">C - Square-based Pyramid</option>
-          <option value="cuboid">D - Cuboid</option>
-        </select>
-        <br />
-        <input type="Button" id="submitBtnTwo" value="Submit Question Two" onClick="questionTwo()">
-      </form>
-      <p id="resultTwo"></p>
-      <br />
-      <!-- Question Three -->
-      <form id="questionThreeFrm" class="question">
-        <label for="questionThree">Q3. Which of these names refers to the same shapes? (Please select Two
-          options)</label>
-        <br />
-        <select id="questionThreeA" name="questionThreeA">
-          <option value="square">Square</option>
-          <option value="oblong">Oblong</option>
-          <option value="triangle">Triangle</option>
-          <option value="circle">Circle</option>
-          <option value="rectangle">Rectangle</option>
-          <option value="hexagon">Hexagon</option>
-        </select>
-        <select id="questionThreeB" name="questionThreeB">
-          <option value="square">Square</option>
-          <option value="oblong">Oblong</option>
-          <option value="triangle">Triangle</option>
-          <option value="circle">Circle</option>
-          <option value="rectangle">Rectangle</option>
-          <option value="hexagon">Hexagon</option>
-        </select>
-        <br />
-        <input type="Button" id="submitBtnThree" value="Submit Question Three" onClick="questionThree()">
-      </form>
-      <p id="resultThree"></p>
-      <br />
-      <!-- Question Four -->
-      <form id="questionFourFrm" class="question">
-        <label for="questionFourIn">Q4. Which of these pictures below shows a cuboid? A, B, or C?</label>
-        <br />
+      <p>Begin the test when the teacher tells you to, or if you're doing this for yourself then take your time and do
+        as much as you can.</p>
+      <section id="importantContent" class="borderRadius">
+        <h2 class="importantTitle">Important!</h2>
         <p>
-          <span>A</span>
-          <img src="../media/images/A.png" alt="Image A" style="max-width: 150px" />
-          <span>B</span>
-          <img src="../media/images/B.png" alt="Image B" style="max-width: 150px" />
-          <span>C</span>
-          <img src="../media/images/C.png" alt="Image C" style="max-width: 150px" />
+          Make sure to answer all the questions before clicking the submit button, but remember before you do click the
+          submit buttons that you cannot change your answer later.
         </p>
-        <fieldset">
-          <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeA" />
-          <label for="shapeA">Shape A</label>
-          <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeB" />
-          <label for="shapeB">Shape B</label>
-          <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeC" />
-          <label for="shapeC">Shape C</label>
-          </fieldset>
-          <br />
-          <input type="Button" id="submitBtnFour" value="Submit Question Four" onClick="questionFour()">
-      </form>
-      <p id="resultFour"></p>
-      <br />
-      <!-- Question Five -->
-      <form id="questionFiveFrm" class="question">
-        <label for="questionFiveIn">Q5. An ______ triangle has two sides of the same length. Equilateral,
-          Isosceles or right angled?</label>
-        <br />
-        <select id="questionFiveIn" name="questionFiveIn">
-          <option value="equilateral">Equilateral</option>
-          <option value="isosceles">Isosceles</option>
-          <option value="rightangled">Right Angled</option>
-        </select>
-        <br />
-        <input type="Button" id="submitBtnFive" value="Submit Question Five" onClick="questionFive()">
-      </form>
-      <p id="resultFive"></p>
-      <br />
-      <!-- Question Six -->
-      <form id="questionSixFrm" class="question">
-        <label for="questionSixIn">Q6. How many edges does a square-based pyramid have? (Inset a number between 1 and
-          12)</label>
-        <br />
-        <input id="questionSixIn" type="number" name="questionSixIn" min="1" max="12">
-        <br />
-        <input type="Button" id="submitBtnSix" value="Submit Question Six" onClick="questionSix()">
-      </form>
-      <p id="resultSix"></p>
-      <br />
-      <!-- Question Seven -->
-      <form id="questionSevenFrm" class="question">
-        <p>Q7. A rhombus is a special-case example of a square.</p>
-        <label for="questionSevenIn">Checked = True, Unchecked = False?</label>
-        <br />
-        <input id="questionSevenIn" type="checkbox" name="questionSevenIn">
-        <br />
-        <input type="Button" id="submitBtnSeven" value="Submit Question Seven" onClick="questionSeven()">
-      </form>
-      <p id="resultSeven"></p>
-      <br />
-      <!-- Question Eight -->
-      <form id="questionEightFrm" class="question">
-        <label for="questionEightIn">Q8. Which of these angles is a full circle?</label>
-        <br />
-        <select id="questionEightIn">
-          <option value="ninety">90</option>
-          <option value="oneeighty">180</option>
-          <option value="twoseventy">270</option>
-          <option value="threesixty">360</option>
-        </select>
-        <br />
-        <input type="Button" id="submitBtnEight" value="Submit Question Eight" onClick="questionEight()">
-      </form>
-      <p id="resultEight"></p>
-      <br />
-      <!-- Question Nine -->
-      <form id="questionNineFrm" class="question">
-        <label for="questionNineIn">Q9. What is the value of 1005 - 44?</label>
-        <br />
-        <textarea id="questionNineIn" cols="20" rows="1"></textarea>
-        <br />
-        <input type="Button" id="submitBtnNine" value="Submit Question Nine" onClick="questionNine()">
-      </form>
-      <p id="resultNine"></p>
-      <br />
-      <!-- Question Ten -->
-      <form id="questionTenFrm" class="question">
-        <label for="questionTenIn">Q10. What is 35% of 480?</label>
-        <br />
-        <input id="questionTenIn" type="number" min="140" max="190">
-        <br />
-        <input type="Button" id="submitBtnTen" value="Submit Question Ten" onClick="questionTen()">
-      </form>
-      <p id="resultTen"></p>
-      <br />
+      </section>
+      <section id="questions">
+        <!-- Question One -->
+        <div id="questionOne" class="question">
+          <form id="questionOneFrm">
+            <label for="questionOneIn" class="questionText">Q1. What is the name of the four-sided shape that has
+              equal-length
+              sides but unequal angles?</label>
+            <input id="questionOneIn" type="text" size="20" />
+            <input type="Button" id="submitBtnOne" value="Submit Question One" onClick="questionOne()">
+          </form>
+          <p id="resultOne"></p>
+        </div>
+        <!-- Question Two -->
+        <form id="questionTwoFrm" class="question">
+          <label for="questionTwoIn" class="questionText">Q2. Which of these solid objects has four sides? A -
+            Triangular
+            Prism,
+            B - Tetrahedron, C - Square-based Pyramid, D - Cuboid.</label>
+          <select id="questionTwoIn" name="questionTwoIn">
+            <option value="triangularprism">A - Triangular Prism</option>
+            <option value="tetrahedron">B - Tetrahedron</option>
+            <option value="squarebasedpyramid">C - Square-based Pyramid</option>
+            <option value="cuboid">D - Cuboid</option>
+          </select>
+          <input type="Button" id="submitBtnTwo" value="Submit Question Two" onClick="questionTwo()">
+        </form>
+        <p id="resultTwo"></p>
+        <!-- Question Three -->
+        <form id="questionThreeFrm" class="question">
+          <label for="questionThree" class="questionText">Q3. Which of these names refers to the same shapes? (Please
+            select Two
+            options)</label>
+          <select id="questionThreeA" name="questionThreeA">
+            <option value="square">Square</option>
+            <option value="oblong">Oblong</option>
+            <option value="triangle">Triangle</option>
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="hexagon">Hexagon</option>
+          </select>
+          <select id="questionThreeB" name="questionThreeB">
+            <option value="square">Square</option>
+            <option value="oblong">Oblong</option>
+            <option value="triangle">Triangle</option>
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="hexagon">Hexagon</option>
+          </select>
+          <input type="Button" id="submitBtnThree" value="Submit Question Three" onClick="questionThree()">
+        </form>
+        <p id="resultThree"></p>
+        <!-- Question Four -->
+        <form id="questionFourFrm" class="question">
+          <label for="questionFourIn" class="questionText">Q4. Which of these pictures below shows a cuboid? A, B, or
+            C?</label>
+          <p>
+            <span>A</span>
+            <img src="../media/images/A.png" alt="Image A" style="max-width: 150px" />
+            <span>B</span>
+            <img src="../media/images/B.png" alt="Image B" style="max-width: 150px" />
+            <span>C</span>
+            <img src="../media/images/C.png" alt="Image C" style="max-width: 150px" />
+          </p>
+          <fieldset">
+            <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeA" />
+            <label for="shapeA">Shape A</label>
+            <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeB" />
+            <label for="shapeB">Shape B</label>
+            <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeC" />
+            <label for="shapeC">Shape C</label>
+            </fieldset>
+            <input type="Button" id="submitBtnFour" value="Submit Question Four" onClick="questionFour()">
+        </form>
+        <p id="resultFour"></p>
+        <!-- Question Five -->
+        <form id="questionFiveFrm" class="question">
+          <label for="questionFiveIn" class="questionText">Q5. An ______ triangle has two sides of the same length.
+            Equilateral,
+            Isosceles or right angled?</label>
+          <select id="questionFiveIn" name="questionFiveIn">
+            <option value="equilateral">Equilateral</option>
+            <option value="isosceles">Isosceles</option>
+            <option value="rightangled">Right Angled</option>
+          </select>
+          <input type="Button" id="submitBtnFive" value="Submit Question Five" onClick="questionFive()">
+        </form>
+        <p id="resultFive"></p>
+        <!-- Question Six -->
+        <form id="questionSixFrm" class="question">
+          <label for="questionSixIn" class="questionText">Q6. How many edges does a square-based pyramid have? (Inset a
+            number between 1 and
+            12)</label>
+          <input id="questionSixIn" type="number" name="questionSixIn" min="1" max="12">
+          <input type="Button" id="submitBtnSix" value="Submit Question Six" onClick="questionSix()">
+        </form>
+        <p id="resultSix"></p>
+        <!-- Question Seven -->
+        <form id="questionSevenFrm" class="question">
+          <p class="questionText">Q7. A rhombus is a special-case example of a square.</p>
+          <label for="questionSevenIn">Checked = True, Unchecked = False?</label>
+          <input id="questionSevenIn" type="checkbox" name="questionSevenIn">
+          <input type="Button" id="submitBtnSeven" value="Submit Question Seven" onClick="questionSeven()">
+        </form>
+        <p id="resultSeven"></p>
+        <!-- Question Eight -->
+        <form id="questionEightFrm" class="question">
+          <label for="questionEightIn" class="questionText">Q8. Which of these angles is a full circle?</label>
+          <select id="questionEightIn">
+            <option value="ninety">90</option>
+            <option value="oneeighty">180</option>
+            <option value="twoseventy">270</option>
+            <option value="threesixty">360</option>
+          </select>
+          <input type="Button" id="submitBtnEight" value="Submit Question Eight" onClick="questionEight()">
+        </form>
+        <p id="resultEight"></p>
+        <!-- Question Nine -->
+        <form id="questionNineFrm" class="question">
+          <label for="questionNineIn" class="questionText">Q9. What is the value of 1005 - 44?</label>
+          <textarea id="questionNineIn" cols="20" rows="1"></textarea>
+          <input type="Button" id="submitBtnNine" value="Submit Question Nine" onClick="questionNine()">
+        </form>
+        <p id="resultNine"></p>
+        <!-- Question Ten -->
+        <form id="questionTenFrm" class="question">
+          <label for="questionTenIn" class="questionText">Q10. What is 35% of 480?</label>
+          <input id="questionTenIn" type="number" min="140" max="190">
+          <input type="Button" id="submitBtnTen" value="Submit Question Ten" onClick="questionTen()">
+        </form>
+        <p id="resultTen"></p>
+      </section>
+      <section class="submit">
+        <p>
+          Click the button below to submit your answers and go to the next page.
+        </p>
+        <a href="quiz-end.html">
+          <button type="button" id="submitAnswers" form="mathQuiz">Submit Answers</button>
+        </a>
+      </section>
     </section>
     <!-- Input Button For Results -->
-    <p>
-      Click the button below to submit your answers and go to the next page.
-    </p>
-    <a href="quiz-end.html">
-      <button type="button" id="submitAnswers" form="mathQuiz">Submit Answers</button>
-    </a>
   </main>
   <footer>
     <section id="flinks">
