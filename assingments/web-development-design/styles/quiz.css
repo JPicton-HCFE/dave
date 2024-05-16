@@ -47,20 +47,26 @@ main {
   width: 11vw;
   max-width: 11vw;
   margin: 0 2rem 0 0.3rem;
+}
+
+#left-help {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: var(--important-color);
+  border: var(--secondary-color) solid 1px;
+  padding:0.3rem;
 }
 
 #left-help-title {
   color: #967d00;
   text-decoration: underline;
   font-size: 36px;
-  padding: 1rem 0;
-  text-align: center;
 }
 
-#left-content {
-  border: black solid 1px;
+#left-help-p {
+  padding: 0.5rem;
+  text-align: center;
 }
 
 #main-content {

@@ -205,4 +205,10 @@ function questionTen() {
   document.getElementById("submitBtnTen").disabled = true; // Disables the button after submitting.
 }
 
-function finalDetails() {}
+// Help Button
+function helpButton() {
+  var helpText = "To use the quiz on the website, you first need to type your answer into the input box or choose out of one of the options used for the question. Then you can submit the question and move onto the next one. When finished click Submit Answers.";
+  alert(helpText);
+}
+
+function finalDetails() { }
