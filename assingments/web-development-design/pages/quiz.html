@@ -45,9 +45,9 @@
         <!-- Question One -->
         <div id="questionOne" class="question">
           <form id="questionOneFrm">
-            <label for="questionOneIn" class="questionText">Q1. What is the name of the four-sided shape that has
-              equal-length
-              sides but unequal angles?</label>
+            <span class="questionMarker">Q1.</span>
+            <label for="questionOneIn" class="questionText">What is the name of the four-sided shape that has
+              equal-length sides but unequal angles?</label>
             <input id="questionOneIn" type="text" size="20" />
             <input type="Button" id="submitBtnOne" value="Submit Question One" onClick="questionOne()">
           </form>
@@ -104,17 +104,18 @@
             <span>C</span>
             <img src="../media/images/C.png" alt="Image C" style="max-width: 150px" />
           </p>
-          <fieldset">
+          <fieldset>
             <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeA" />
             <label for="shapeA">Shape A</label>
             <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeB" />
             <label for="shapeB">Shape B</label>
             <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeC" />
             <label for="shapeC">Shape C</label>
-            </fieldset>
+          </fieldset>
             <input type="Button" id="submitBtnFour" value="Submit Question Four" onClick="questionFour()">
         </form>
         <p id="resultFour"></p>
+        
         <!-- Question Five -->
         <form id="questionFiveFrm" class="question">
           <label for="questionFiveIn" class="questionText">Q5. An ______ triangle has two sides of the same length.
