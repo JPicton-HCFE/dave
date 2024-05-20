@@ -89,9 +89,15 @@ main {
   align-items: center;
 }
 
+/* --------------------------------------------------------- */
+/*  Styling for paragraphs. */
 #top-paras {
   font-size: 1.3rem;
   padding: 0.4rem 0.2rem;
+  text-align: center;
+  background-color: var(--content-color-one);
+  border-radius: 15px;
+  border: var(--secondary-color) solid 1px;
 }
 
 /* --------------------------------------------------------- */
@@ -125,6 +131,14 @@ font-weight: 900;
 
 .questionText {
   font-weight: 500;
+}
+
+/* --------------------------------------------------------- */
+/*  Styling for the Submit section. */
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* --------------------------------------------------------- */
