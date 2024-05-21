@@ -14,7 +14,7 @@
   <main>
     <!-- Left Panel Section -->
     <section id="left-panel">
-      <div id="left-help" class="borderRadius">
+      <div id="left-help" class="borderRadius simpleBorder">
         <span id="left-help-title">Help</span>
         <p id="left-help-p">
           If you are in need of some help to understand the quiz please click the button below.
@@ -22,8 +22,8 @@
         <button onclick="helpButton()">Click for Help</button>
       </div>
     </section>
-    <section id="main-content" class="borderRadius">
-      <section id="top-paras">
+    <section id="main-content" class="borderRadius simpleBorder">
+      <section id="top-paras" class="simpleBorder">
         <p>
           Welcome to the Mathematics quiz, there are a number of questions below that need to be answered. Please make
           sure to go through the questions and answer them as best to your ability as you can. Each question has a
@@ -34,7 +34,7 @@
           as much as you can.
         </p>
       </section>
-      <section id="importantContent" class="borderRadius">
+      <section id="importantContent" class="borderRadius simpleBorder">
         <h2 class="importantTitle">Important!</h2>
         <p>
           Make sure to answer all the questions before clicking the submit button, but remember before you do click the
@@ -42,8 +42,9 @@
         </p>
       </section>
       <section id="questions">
+
         <!-- Question One -->
-        <div id="questionOne" class="question">
+        <div id="questionOne" class="question simpleBorder">
           <form id="questionOneFrm">
             <span class="questionMarker">Q1.</span>
             <label for="questionOneIn" class="questionText">What is the name of the four-sided shape that has
@@ -53,9 +54,11 @@
           </form>
           <p id="resultOne"></p>
         </div>
+
         <!-- Question Two -->
-        <form id="questionTwoFrm" class="question">
-          <label for="questionTwoIn" class="questionText">Q2. Which of these solid objects has four sides? A -
+        <form id="questionTwoFrm" class="question simpleBorder">
+          <span class="questionMarker">Q2.</span>
+          <label for="questionTwoIn" class="questionText">Which of these solid objects has four sides? A -
             Triangular
             Prism,
             B - Tetrahedron, C - Square-based Pyramid, D - Cuboid.</label>
@@ -68,11 +71,12 @@
           <input type="Button" id="submitBtnTwo" value="Submit Question Two" onClick="questionTwo()">
         </form>
         <p id="resultTwo"></p>
+
         <!-- Question Three -->
-        <form id="questionThreeFrm" class="question">
-          <label for="questionThree" class="questionText">Q3. Which of these names refers to the same shapes? (Please
-            select Two
-            options)</label>
+        <form id="questionThreeFrm" class="question simpleBorder">
+          <span class="questionMarker">Q3.</span>
+          <label for="questionThree" class="questionText">Which of these names refers to the same shapes? (Please
+            select Two options)</label>
           <select id="questionThreeA" name="questionThreeA">
             <option value="square">Square</option>
             <option value="oblong">Oblong</option>
@@ -92,9 +96,11 @@
           <input type="Button" id="submitBtnThree" value="Submit Question Three" onClick="questionThree()">
         </form>
         <p id="resultThree"></p>
+
         <!-- Question Four -->
-        <form id="questionFourFrm" class="question">
-          <label for="questionFourIn" class="questionText">Q4. Which of these pictures below shows a cuboid? A, B, or
+        <form id="questionFourFrm" class="question simpleBorder">
+          <span class="questionMarker">Q4.</span>
+          <label for="questionFourIn" class="questionText">Which of these pictures below shows a cuboid? A, B, or
             C?</label>
           <p>
             <span>A</span>
@@ -112,15 +118,15 @@
             <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeC" />
             <label for="shapeC">Shape C</label>
           </fieldset>
-            <input type="Button" id="submitBtnFour" value="Submit Question Four" onClick="questionFour()">
+          <input type="Button" id="submitBtnFour" value="Submit Question Four" onClick="questionFour()">
         </form>
         <p id="resultFour"></p>
-        
+
         <!-- Question Five -->
-        <form id="questionFiveFrm" class="question">
-          <label for="questionFiveIn" class="questionText">Q5. An ______ triangle has two sides of the same length.
-            Equilateral,
-            Isosceles or right angled?</label>
+        <form id="questionFiveFrm" class="question simpleBorder">
+          <span class="questionMarker">Q5.</span>
+          <label for="questionFiveIn" class="questionText">An ______ triangle has two sides of the same length.
+            Equilateral, Isosceles or right angled?</label>
           <select id="questionFiveIn" name="questionFiveIn">
             <option value="equilateral">Equilateral</option>
             <option value="isosceles">Isosceles</option>
@@ -129,26 +135,30 @@
           <input type="Button" id="submitBtnFive" value="Submit Question Five" onClick="questionFive()">
         </form>
         <p id="resultFive"></p>
+
         <!-- Question Six -->
-        <form id="questionSixFrm" class="question">
-          <label for="questionSixIn" class="questionText">Q6. How many edges does a square-based pyramid have? (Inset a
-            number between 1 and
-            12)</label>
+        <form id="questionSixFrm" class="question simpleBorder">
+          <span class="questionMarker">Q6.</span>
+          <label for="questionSixIn" class="questionText">How many edges does a square-based pyramid have? (Inset a
+            number between 1 and 12)</label>
           <input id="questionSixIn" type="number" name="questionSixIn" min="1" max="12">
           <input type="Button" id="submitBtnSix" value="Submit Question Six" onClick="questionSix()">
         </form>
         <p id="resultSix"></p>
+
         <!-- Question Seven -->
-        <form id="questionSevenFrm" class="question">
-          <p class="questionText">Q7. A rhombus is a special-case example of a square.</p>
+        <form id="questionSevenFrm" class="question simpleBorder">
+          <p class="questionText"><span class="questionMarker">Q7.</span> A rhombus is a special-case example of a square.</p>
           <label for="questionSevenIn">Checked = True, Unchecked = False?</label>
           <input id="questionSevenIn" type="checkbox" name="questionSevenIn">
           <input type="Button" id="submitBtnSeven" value="Submit Question Seven" onClick="questionSeven()">
         </form>
         <p id="resultSeven"></p>
+
         <!-- Question Eight -->
-        <form id="questionEightFrm" class="question">
-          <label for="questionEightIn" class="questionText">Q8. Which of these angles is a full circle?</label>
+        <form id="questionEightFrm" class="question simpleBorder">
+          <span class="questionMarker">Q8.</span>
+          <label for="questionEightIn" class="questionText">Which of these angles is a full circle?</label>
           <select id="questionEightIn">
             <option value="ninety">90</option>
             <option value="oneeighty">180</option>
@@ -158,25 +168,27 @@
           <input type="Button" id="submitBtnEight" value="Submit Question Eight" onClick="questionEight()">
         </form>
         <p id="resultEight"></p>
+
         <!-- Question Nine -->
-        <form id="questionNineFrm" class="question">
-          <label for="questionNineIn" class="questionText">Q9. What is the value of 1005 - 44?</label>
+        <form id="questionNineFrm" class="question simpleBorder">
+          <span class="questionMarker">Q9.</span>
+          <label for="questionNineIn" class="questionText">What is the value of 1005 - 44?</label>
           <textarea id="questionNineIn" cols="20" rows="1"></textarea>
           <input type="Button" id="submitBtnNine" value="Submit Question Nine" onClick="questionNine()">
         </form>
         <p id="resultNine"></p>
+
         <!-- Question Ten -->
-        <form id="questionTenFrm" class="question">
-          <label for="questionTenIn" class="questionText">Q10. What is 35% of 480?</label>
+        <form id="questionTenFrm" class="question simpleBorder">
+          <span class="questionMarker">Q10.</span>
+          <label for="questionTenIn" class="questionText">What is 35% of 480?</label>
           <input id="questionTenIn" type="number" min="140" max="190">
           <input type="Button" id="submitBtnTen" value="Submit Question Ten" onClick="questionTen()">
         </form>
         <p id="resultTen"></p>
       </section>
       <section class="submit">
-        <p>
-          Click the button below to submit your answers and go to the next page.
-        </p>
+        <p>Click the button below to submit your answers and go to the next page.</p>
         <a href="quiz-end.html">
           <button type="button" id="submitAnswers" form="mathQuiz">Submit Answers</button>
         </a>

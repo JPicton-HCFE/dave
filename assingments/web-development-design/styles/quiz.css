@@ -62,7 +62,6 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: var(--important-color);
-  border: var(--secondary-color) solid 1px;
   padding:0.3rem;
 }
 
@@ -83,7 +82,6 @@ main {
   background-color: rgba(78, 205, 196, 0.3);
   padding: 1.5rem;
   border-radius: 20px;
-  border: 1px groove var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +95,6 @@ main {
   text-align: center;
   background-color: var(--content-color-one);
   border-radius: 15px;
-  border: var(--secondary-color) solid 1px;
 }
 
 /* --------------------------------------------------------- */
@@ -121,8 +118,6 @@ main {
 
 .question {
   margin: 0.2rem 0;
-  /* background-color: red; */
-  border: var(--content-color-two) 1px solid;
 }
 
 .questionMarker {
@@ -199,4 +194,9 @@ footer>div>a:hover {
 /* Global Styles */
 .borderRadius {
   border-radius: 15px;
+}
+
+/* Simple Border */
+.simpleBorder {
+  outline: var(--secondary-color) 1px solid;
 }
