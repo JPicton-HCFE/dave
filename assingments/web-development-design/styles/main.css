@@ -97,10 +97,12 @@ header {
   font-weight: 900;
 
   background: rgb(9, 9, 121);
-  background: linear-gradient(90deg,
-      rgba(9, 9, 121, 1) 0%,
-      rgba(0, 212, 255, 1) 50%,
-      rgba(9, 9, 121, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 50%,
+    rgba(9, 9, 121, 1) 100%
+  );
 
   color: white;
 
@@ -108,7 +110,7 @@ header {
   border-bottom: 5px groove seagreen;
 }
 
-#main-nav>#nav-ul {
+#main-nav > #nav-ul {
   display: flex;
   width: 85%;
   justify-content: space-around;
@@ -159,7 +161,7 @@ main {
   align-items: center;
 }
 
-#main-content>p {
+#main-content > p {
   padding: 0.5rem 0;
   text-align: center;
 }
@@ -237,6 +239,20 @@ main {
 }
 
 /* --------------------------------------------------------- */
+/* Styling for image section on gallery page. */
+#gallery > img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* --------------------------------------------------------- */
+/* Styling for videos section on media page. */
+#videos > iframe {
+  max-width: 720;
+  max-height: 360;
+}
+
+/* --------------------------------------------------------- */
 /*  Styling for the Contact Form. */
 #cform {
   background-color: var(--content-color-two);
@@ -298,12 +314,12 @@ footer {
   stroke: var(--purple);
 }
 
-.falink:hover>.website-icon {
+.falink:hover > .website-icon {
   stroke: var(--purple);
 }
 
 /* Styling hyperlinks when they are hovered over. */
-footer>div>a:hover {
+footer > div > a:hover {
   color: var(--content-color-one);
 }
 
