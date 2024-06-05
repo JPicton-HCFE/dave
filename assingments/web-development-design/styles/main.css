@@ -214,6 +214,13 @@ main {
   text-align: center;
 }
 
+#left-help-here {
+  font-weight: 900;
+  color: var(--important-color-dark);
+  font-style: italic;
+  text-decoration: underline;
+}
+
 /* --------------------------------------------------------- */
 /*  Styling for the Main Paragraph homepage. */
 #welcome-p {
