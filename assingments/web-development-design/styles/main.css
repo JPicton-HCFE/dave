@@ -9,6 +9,7 @@
   --primary-color: #f7fff7;
   --secondary-color: #292f36;
   --important-color: #ffe66d;
+  --important-color-dark: #967d00;
   --warning-color: #ff6b6b;
   --content-color-one: #4ecdc4;
   --content-color-two: #62c96c;
@@ -183,7 +184,7 @@ main {
 #left-help {
   background-color: var(--important-color);
   box-sizing: border-box;
-  border: #967d00 solid 1px;
+  border: var(--important-color-dark) solid 1px;
   overflow-wrap: normal;
   max-height: 40vh;
 
@@ -194,7 +195,7 @@ main {
 }
 
 #left-help-title {
-  color: #967d00;
+  color: var(--important-color-dark);
   text-decoration: underline;
   font-size: 36px;
   padding: 1rem 0;
@@ -207,7 +208,10 @@ main {
 }
 
 #left-content {
-  border: black solid 1px;
+  border: var(--important-color-dark) solid 1px;
+  padding: 0.3rem;
+  background-color: var(--important-color);
+  text-align: center;
 }
 
 /* --------------------------------------------------------- */
