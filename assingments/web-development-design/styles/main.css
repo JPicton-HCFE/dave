@@ -2,7 +2,7 @@
 /* --------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-/*   */
+/*  Important Declaration */
 /* --------------------------------------------------------- */
 * {
   /* Vairables */
@@ -14,7 +14,12 @@
   --content-color-one: #4ecdc4;
   --content-color-two: #62c96c;
   --purple: #b894ec;
-  --hoverable: #FDB833;
+  --hoverable: #fdb833;
+
+  /* Opacity Values */
+  --quarter-darker: rgba(0, 0, 0, 0.25);
+  --half-darker: rgba(0, 0, 0, 0.5);
+  --three-quarter-darker: rgba(0, 0, 0, 0.75);
 
   /* Font Family */
   font-family: "Quicksand", sans-serif;
@@ -180,6 +185,23 @@ main {
 #home-quiz-btn:hover {
   color: var(--warning-color);
   cursor: pointer;
+}
+
+/* Styling for About page. */
+#teachers-info {
+  background-color: var(--quarter-darker);
+  padding: 0.75rem;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#help-info {
+  background-color: var(--quarter-darker);
+  padding: 0.75rem;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 /* --------------------------------------------------------- */
@@ -380,13 +402,18 @@ footer > div > a:hover {
 .italics {
   font-style: italic;
 }
-
+/* Hoverable Item */
 .hoverable {
-  color: var(--hoverable)
+  color: var(--hoverable);
 }
 
-/* Hoverable Item */
 .hoverable:hover {
   text-decoration: underline;
-  color: var(--purple)
+  color: var(--purple);
+}
+
+/* Outline/Border */
+.outline-border {
+  outline: var(--secondary-color) 1px solid;
+
 }
