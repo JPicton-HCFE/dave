@@ -240,16 +240,21 @@ main {
 
 /* --------------------------------------------------------- */
 /* Styling for image section on gallery page. */
-#gallery > img {
+#gallery {
+  display:flex;
+  align-items: center;
+}
+
+.gallery-item {
   max-width: 50%;
   max-height: 50%;
 }
 
 /* --------------------------------------------------------- */
 /* Styling for videos section on media page. */
-#videos > iframe {
-  max-width: 720;
-  max-height: 360;
+.video-item {
+  width: 480px;
+  height: 240px;
 }
 
 /* --------------------------------------------------------- */
