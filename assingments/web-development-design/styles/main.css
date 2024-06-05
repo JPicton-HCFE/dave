@@ -175,6 +175,7 @@ main {
 
 #home-quiz-btn:hover {
   color: var(--warning-color);
+  cursor: pointer;
 }
 
 /* --------------------------------------------------------- */
