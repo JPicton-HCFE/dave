@@ -435,3 +435,7 @@ footer > div > a:hover {
 .border-radius-15 {
   border-radius: 15px;
 }
+
+#issue-one {
+  background-color: var(--fifteen-darker);
+}
