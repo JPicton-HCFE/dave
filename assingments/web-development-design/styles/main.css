@@ -257,6 +257,20 @@ main {
   height: 240px;
 }
 
+/* YouTube Channel Styling. */
+#media-yt-channels {
+  display: flex;
+}
+
+.media-yt-channel-item {
+  margin: 0.2rem;
+}
+
+.media-yt-channel-item:hover {
+  outline: 3px var(--purple) solid;
+  box-sizing: border-box;
+}
+
 /* --------------------------------------------------------- */
 /*  Styling for the Contact Form. */
 #cform {
