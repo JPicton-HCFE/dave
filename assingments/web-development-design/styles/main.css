@@ -214,8 +214,23 @@ main {
   flex-direction: column;
 }
 
-#help-info > img {
+#issue-one {
+  display: flex;
+  flex-direction: column;
+  margin: 0.3rem 0;
+  padding: 0.2rem;
+}
+
+.help-info-image {
   margin: 0.3rem;
+  width: 30%;
+}
+
+.issue-no {
+  text-align: left;
+  font-weight: 900;
+  text-decoration: underline;
+  color: #292f36;
 }
 
 /* --------------------------------------------------------- */
@@ -416,6 +431,7 @@ footer > div > a:hover {
 .italics {
   font-style: italic;
 }
+
 /* Hoverable Item */
 .hoverable {
   color: var(--hoverable);
@@ -434,8 +450,4 @@ footer > div > a:hover {
 /* Border Radius */
 .border-radius-15 {
   border-radius: 15px;
-}
-
-#issue-one {
-  background-color: var(--fifteen-darker);
 }
