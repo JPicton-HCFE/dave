@@ -32,11 +32,11 @@ function questionTwo() {
     document.getElementById(
       "resultTwo"
     ).innerHTML = `Correct, your score is currently: ${points}`;
-    document.getElementById("questionSixFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
+    document.getElementById("questionTwoFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
   } else {
     document.getElementById("resultTwo").innerHTML =
       "You didn't get the answer correct! You missed out on 1 point.";
-    document.getElementById("questionOneFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
+    document.getElementById("questionTwoFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
   }
   document.getElementById("submitBtnTwo").disabled = true; // Disables the button after submitting.
 }
@@ -59,11 +59,11 @@ function questionThree() {
     document.getElementById(
       "resultThree"
     ).innerHTML = `Correct, your score is currently: ${points}`;
-    document.getElementById("questionSixFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
+    document.getElementById("questionThreeFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
   } else {
     document.getElementById("resultThree").innerHTML =
       "You didn't get the answer correct! You missed out on 2 points.";
-    document.getElementById("questionOneFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
+    document.getElementById("questionThreeFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
   }
   document.getElementById("submitBtnThree").disabled = true; // Disables the button after submitting.
 }
@@ -72,7 +72,7 @@ function questionThree() {
 function questionFour() {
   var input = document.getElementById("questionFourIn").value;
 
-  const answer = "B";
+  const answer = "shapeC";
   console.log(`Question four output = ${input}.`); // Gives the output of the input into the console to make sure it gives the correct output.
 
   if (input == answer) {
@@ -80,11 +80,11 @@ function questionFour() {
     document.getElementById(
       "resultFour"
     ).innerHTML = `Correct, your score is currently: ${points}`;
-    document.getElementById("questionSixFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
+    document.getElementById("questionFourFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
   } else {
     document.getElementById("resultFour").innerHTML =
       "You didn't get the answer correct! You missed out on 1 point.";
-    document.getElementById("questionOneFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
+    document.getElementById("questionFourFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
   }
 
   document.getElementById("submitBtnFour").disabled = true; // Disables the button after submitting.
@@ -100,11 +100,11 @@ function questionFive() {
     document.getElementById(
       "resultFive"
     ).innerHTML = `Correct, your score is currently: ${points}`;
-    document.getElementById("questionSixFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
+    document.getElementById("questionFiveFrm").style.backgroundColor = "green"; // Changes the colour of the form background to green if correct.
   } else {
     document.getElementById("resultFive").innerHTML =
       "You didn't get the answer correct! You missed out on 1 point.";
-    document.getElementById("questionOneFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
+    document.getElementById("questionFiveFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
   }
   document.getElementById("submitBtnFive").disabled = true; // Disables the button after submitting.
 }
@@ -157,11 +157,11 @@ function questionEight() {
     document.getElementById(
       "resultEight"
     ).innerHTML = `Correct, your score is currently: ${points}`;
-    document.getElementById("questionSixFrm").style.backgroundColor = "green"; // Changes the colour of the form (element) background to green if correct.
+    document.getElementById("questionEightFrm").style.backgroundColor = "green"; // Changes the colour of the form (element) background to green if correct.
   } else {
     document.getElementById("resultEight").innerHTML =
       "You didn't get the answer correct! You missed out on 1 point.";
-    document.getElementById("questionOneFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
+    document.getElementById("questionEightFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
   }
   document.getElementById("submitBtnEight").disabled = true; // Disables the button after submitting.
 }
@@ -176,11 +176,11 @@ function questionNine() {
     document.getElementById(
       "resultNine"
     ).innerHTML = `Correct, your score is currently: ${points}`;
-    document.getElementById("questionSixFrm").style.backgroundColor = "green"; // Changes the colour of the form (element) background to green if correct.
+    document.getElementById("questionNineFrm").style.backgroundColor = "green"; // Changes the colour of the form (element) background to green if correct.
   } else {
     document.getElementById("resultNine").innerHTML =
       "You didn't get the answer correct! You missed out on 1 point.";
-    document.getElementById("questionOneFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
+    document.getElementById("questionNineFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
   }
   document.getElementById("submitBtnNine").disabled = true; // Disables the button after submitting.
 }
@@ -196,11 +196,11 @@ function questionTen() {
     document.getElementById(
       "resultTen"
     ).innerHTML = `Correct, your score is currently: ${points}`;
-    document.getElementById("questionSixFrm").style.backgroundColor = "green"; // Changes the colour of the form (element) background to green if correct.
+    document.getElementById("questionTenFrm").style.backgroundColor = "green"; // Changes the colour of the form (element) background to green if correct.
   } else {
     document.getElementById("resultTen").innerHTML =
       "You didn't get the answer correct! You missed out on 1 point.";
-    document.getElementById("questionOneFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
+    document.getElementById("questionTenFrm").style.backgroundColor = "red"; // Changes the colour of the form (element) background to red if incorrect.
   }
   document.getElementById("submitBtnTen").disabled = true; // Disables the button after submitting.
 }
