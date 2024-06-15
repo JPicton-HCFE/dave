@@ -101,22 +101,23 @@
         <!-- Question Four -->
         <form id="questionFourFrm" class="question simpleBorder">
           <span class="questionMarker">Q4.</span>
-          <label for="questionFourIn" class="questionText">Which of these pictures below shows a cuboid? A, B, or
+          <label for="questionFourIn" type="radio" class="questionText">Which of these pictures below shows a cuboid? A, B, or
             C?</label>
           <p>
-            <span>Answer - Shape A</span>
+            <span>Option One - Shape A</span>
             <img src="../media/images/A.webp" alt="Image A (Option A)" title="Image A (Option A)" style="max-width: 150px" />
-            <span>Answer - Shape B</span>
+            <span>Option Two - Shape B</span>
             <img src="../media/images/B.webp" alt="Image B (Option B)" title="Image B (Option B)" style="max-width: 150px" />
-            <span>Answer - Shape C</span>
+            <span>Option Three - Shape C</span>
             <img src="../media/images/C.webp" alt="Image C (Option C)" title="Image C (Option C)" style="max-width: 150px" />
           </p>
           <fieldset>
-            <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeA" />
+            <legend>Select an option:</legend>
+            <input type="radio" id="questionFourInOne" name="questionFourIn" value="shapeA" />
             <label for="shapeA">Shape A</label>
-            <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeB" />
+            <input type="radio" id="questionFourInTwo" name="questionFourIn" value="shapeB" />
             <label for="shapeB">Shape B</label>
-            <input type="radio" id="questionFourIn" name="questionFourIn" value="shapeC" />
+            <input type="radio" id="questionFourInThree" name="questionFourIn" value="shapeC" />
             <label for="shapeC">Shape C</label>
           </fieldset>
           <input type="Button" id="submitBtnFour" value="Submit Question Four" onClick="questionFour()">
