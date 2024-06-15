@@ -72,7 +72,7 @@ function questionThree() {
 function questionFour() {
   var input = document.getElementById("questionFourIn").value;
 
-  const answer = "shapeC";
+  const answer = "shapeB";
   console.log(`Question four output = ${input}.`); // Gives the output of the input into the console to make sure it gives the correct output.
 
   if (input == answer) {
@@ -207,8 +207,9 @@ function questionTen() {
 
 // Help Button
 function helpButton() {
-  var helpText = "To use the quiz on the website, you first need to type your answer into the input box or choose out of one of the options used for the question. Then you can submit the question and move onto the next one. When finished click Submit Answers.";
+  var helpText =
+    "To use the quiz on the website, you first need to type your answer into the input box or choose out of one of the options used for the question. Then you can submit the question and move onto the next one. When finished click Submit Answers.";
   alert(helpText);
 }
 
-function finalDetails() { }
+function finalDetails() {}
