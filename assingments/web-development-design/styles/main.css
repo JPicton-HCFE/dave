@@ -152,14 +152,12 @@ header {
     2px 2px 0 black;
 }
 
-/* --------------------------------------------------------- */
 /*  Navigation Bar Mouse Hover Styling*/
 .nav-item:hover {
   transition: ease-in-out 500ms;
   color: darkgrey;
 }
 
-/* --------------------------------------------------------- */
 /*  Spacing for left panel and main content */
 main {
   display: flex;
