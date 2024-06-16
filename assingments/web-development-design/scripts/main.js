@@ -1,3 +1,4 @@
+// Defining Base Points Value
 var points = 0;
 
 // Question One Function
@@ -212,4 +213,4 @@ function helpButton() {
   alert(helpText);
 }
 
-function finalDetails() {}
+function finalDetails() { }
